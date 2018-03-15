@@ -1,0 +1,109 @@
+h4 {
+  text-align: center;
+  font-family: 'Merienda', cursive;
+}
+
+p {
+  width: 100%;
+  text-decoration: none;
+}
+
+.todo {
+  box-shadow: 0px 0px 20px rgb(210, 210, 210);
+  border-radius: 10px;
+}
+
+.item {
+  height: 50px;
+  opacity: 1;
+  transition: cubic-bezier(0.68, -0.55, 0.27, 1.55) opacity 0.7s;
+}
+
+.text:hover+.icon {
+  opacity: 1;
+}
+
+.text:hover>.checkIcon {
+  opacity: 1;
+}
+
+.text,
+.icon,
+.addIcon {
+  cursor: pointer;
+}
+
+p {
+  margin: 0;
+  font-family: 'Kalam', cursive;
+  font-weight: 400;
+}
+
+.colorGreen {
+  color: rgb(88, 175, 0);
+}
+
+.green {
+  color: rgb(88, 175, 0) !important;
+}
+
+.add {
+  background-color: rgb(241, 241, 241);
+  height: 50px;
+  border-radius: 100px;
+  opacity: 0;
+  transition: ease opacity 0.7s;
+}
+
+.addIcon {
+  background-color: rgb(244, 252, 232);
+  height: 50px;
+  width: 50px;
+  border-radius: 100px;
+  box-shadow: 0px 0px 20px rgb(210, 210, 210);
+  transition: ease background-color 0.7s;
+}
+
+.addIcon:hover {
+  background-color: greenyellow;
+  height: 50px;
+  width: 50px;
+  border-radius: 100px;
+  box-shadow: 0px 0px 20px rgb(156, 156, 156);
+  transition: ease background-color 0.7s;
+}
+
+#inputItem {
+  padding-left: 15px;
+  width: 100%;
+  background: none;
+  outline: none;
+  border: none;
+  font-family: 'Kalam', cursive;
+  font-weight: 400;
+  cursor: default !important;
+  /* Change this  */
+}
+
+.checkIcon {
+  opacity: 1;
+  transition: cubic-bezier(0.68, -0.55, 0.27, 1.55) opacity 0.7s;
+}
+
+.icon {
+  transition: cubic-bezier(0.68, -0.55, 0.27, 1.55) opacity 0.4s;
+}
+
+.icon:hover {
+  opacity: 1;
+  color: rgb(211, 32, 32);
+}
+
+.icon {
+  opacity: 0;
+}
+
+.done {
+  text-decoration: line-through;
+  color: rgb(170, 170, 170);
+}
